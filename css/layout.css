@@ -1,0 +1,72 @@
+/* * - quer dizer que o que está configurado dentro dele vale para todo 
+o código */
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sant;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+   text-align: center;
+   background-image: url(gif3.gif);
+   background-attachment: fixed;
+   background-repeat: repeat;
+}
+
+label{
+    font-family: sant;
+    font-size: 18px;
+    color:white;
+}
+
+
+
+button{
+    background-color: #2990c3;
+    
+    width:120px;  
+    height:30px;
+    text-align:center;
+    left: 640px;
+    color: white;
+    
+}
+
+
+
+
+#a{
+    font-family: sant;
+    text-align: center;
+    color: black;
+    font-size:60px    
+}
+
+#b{
+    font-family: santb;
+    text-align: center;
+}
+
+#c{
+    font-family: sant;
+    font-size:20px;
+}
+
+
+h2{
+    font-size:25px;
+    font-family:sant;
+}
+
+h3{
+    font-family:sant;
+    font-size: 30px;
+}
+
+h4{
+    font-family:cambria;
+}
