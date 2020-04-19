@@ -48,7 +48,6 @@ class Usuario {
         return $q;
     }
    
-    
     //FUNÇÃO UPDATE
     //Edita os dados da tabela
     public function editar($codigo, $nome, $email, $login) {
@@ -61,9 +60,7 @@ class Usuario {
         $q->bindParam(3, $email);
         $q->bindParam(4, $login);
        
-        
         $q->execute();
-        
     }
     
     //FUNÇÃO DELETE
@@ -75,7 +72,5 @@ class Usuario {
         
         $q->execute();
     }
-    
 }
-
 ?>

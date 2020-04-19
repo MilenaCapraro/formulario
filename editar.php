@@ -1,9 +1,7 @@
 <?php
 
 use Classes\Usuario;
-
 require './Classes/Usuario.php';
-
 
 $data = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 $parametros = filter_input_array(INPUT_GET, FILTER_DEFAULT);
@@ -23,7 +21,6 @@ if (isset($data ['salvar'])) {
 <!--
 A função EDITAR é a mesma que o UPDATE.
 -->
-
 
 <html>
     <head>
