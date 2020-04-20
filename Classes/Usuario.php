@@ -55,10 +55,10 @@ class Usuario {
         $sql = "update usuario set nome = ?, email = ?, login = ? where codigo = ?;";
         $q = $this->conexao->prepare($sql);
         
-        $q->bindParam(1, $codigo);
-        $q->bindParam(2, $nome);
-        $q->bindParam(3, $email);
-        $q->bindParam(4, $login);
+        $q->bindParam(1, $nome);
+        $q->bindParam(2, $email);
+        $q->bindParam(3, $login);
+        $q->bindParam(4, $codigo);
        
         $q->execute();
     }
