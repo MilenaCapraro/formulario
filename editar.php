@@ -39,12 +39,6 @@ A função EDITAR é a mesma que o UPDATE.
     </head>
     <body>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
         <div>
             <form " method="post" action="editar.php?codigo=<?php echo $parametros['codigo']; ?>">
@@ -54,25 +48,22 @@ A função EDITAR é a mesma que o UPDATE.
                 <?php foreach ($usuarioList as $index => $usu) { ?>
                     <table id="tabela"> 
 
-                        <td><tr>
+                        <div class="campo">
                         <label for="nome"></label>
-                        <input type="text" required name="nome" id="nome" value = " <?php echo $usu ['nome']; ?>" placeholder="Nome"/>
-                        </tr></td>
-                        <br><br>
+                        <input type="text" required name="nome" style="width: 20em; height: 2em;" id="nome" value = " <?php echo $usu ['nome']; ?>" placeholder="Nome"/>
+                        </div><br>
 
-                        <td><tr>
+                        <div class="campo">
                         <label for="email"></label>
-                        <input type="email" required name="email" id="email" value = " <?php echo $usu ['email']; ?>" placeholder="E-mail""/>
-                        </tr></td>
-                        <br><br>
+                        <input type="email" required name="email" style="width: 20em; height: 2em;" id="email" value = " <?php echo $usu ['email']; ?>" placeholder="E-mail""/>
+                        </div><br>
 
-                        <td><tr>
+                        <div class="campo">
                         <label for="login"></label>
-                        <input type="text" required name="login" id="login" value = " <?php echo $usu ['login']; ?>" placeholder="Login"/>
-                        </tr></td>
-                        <br><br>
+                        <input type="text" required name="login" style="width: 20em; height: 2em;" id="login" value = " <?php echo $usu ['login']; ?>" placeholder="Login"/>
+                        </div><br>
 
-                        <button type="submit" required name="salvar" id="salvar"> Salvar dados </button>
+                        <button class="botao" type="submit" required name="salvar" id="salvar"> Salvar dados </button>
 
                     </table>
                 <?php } ?>

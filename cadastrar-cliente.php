@@ -24,10 +24,10 @@ cadastrar um novo cliente (será redirecionado para o INDEX.PHP), editar os dado
         <title>Formulário - cadastro de clientes</title>
     </head>
     <body>
-        <a href="index.php" style="color: white">Cadastrar novo usuário</a>
-            <br/><br/>
         
-        <table border="1" id="1" style="background-color: #C0E5F6; width:200px; height:100px; margin:auto">
+        <h3>Clientes Cadastrados</h3>
+       
+        <table  border="1" id="1" style="background-color: black; width:10em; height: 2em; margin:auto">
             <tr>
                 
                 <td>Código</td>
@@ -42,18 +42,21 @@ cadastrar um novo cliente (será redirecionado para o INDEX.PHP), editar os dado
                  <?php foreach ($usuarios as $index=>$usuario) { ?>
             
             <tr>
-                <td><?php echo $usuario ['codigo']; ?></td>
+                <td style="background-color: black; width:500px; height: 50; margin:auto"><?php echo $usuario ['codigo']; ?></td>
                 <td><?php echo $usuario ['nome'] ?></td>
                 <td><?php echo $usuario ['email'] ?></td>
                 <td><?php echo $usuario ['login'] ?></td>
                 <td>
-                    <a style="color: white" href="editar.php?codigo=<?php echo $usuario ['codigo']; ?> &editar">Editar</a> |
-                    <a style="color: white" href="eliminar.php?codigo=<?php echo $usuario ['codigo']; ?> &excluir">Excluir</a>
+                    <a style="color: white" href="editar.php?codigo=<?php echo $usuario ['codigo']; ?> &editar" ><img src="css/editar.png" width="20"></a>
+                    <a style="color: white" href="eliminar.php?codigo=<?php echo $usuario ['codigo']; ?> &excluir" ><img src="css/apagar.png" width="20"></a>
                 </td>
             </tr>
+            
            <?php } ?>
             </tbody>
-        </table>
+            </table>
+        <br><br>
+        <a href="index.php" class="titulo" style="color: white; font-family: sant; font-size: 30px;">Cadastrar novo usuário</a>
     </body>
 </html>
 

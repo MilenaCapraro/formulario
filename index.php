@@ -29,56 +29,41 @@ criado um cadastro.
             <script>
                 alert("Usuário cadastrado com sucesso !");
             </script>
-            
+
         <?php } ?>
     </head>
     <body>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
         <div>
             <form action="index.php" method="post">
-
                 <h3>Cadastre-se</h3>
 
-                <table id="tabela"> 
+                <table class="tabela"> 
 
+                    <div class="campo">
+                        <label for="nome" ></label>
+                        <input type="text" required name="nome" style="width: 20em; height: 2em; font-size: 15px" id="nome" placeholder="Nome"/>
+                    </div>
 
-                    <td><tr>
-                    <label for="nome"></label>
-                    <input type="text" required name="nome" id="nome" placeholder="Nome"/>
-                    </tr></td>
-                    <br><br>
+                    <div class="campo">
+                        <label for="email"></label><br>
+                        <input type="email" required name="email" style="width: 20em; height: 2em; font-size: 15px" id="email" placeholder="E-mail"/>
+                    </div><br>
 
-                    <td><tr>
-                    <label for="email"></label>
-                    <input type="email" required name="email" id="email" placeholder="E-mail"/>
-                    </tr></td>
-                    <br><br>
+                    <div class="campo">
+                        <label for="login"></label>
+                        <input type="text" required name="login" style="width: 20em; height: 2em; font-size: 15px" id="login" placeholder="Login"/>
+                    </div><br>
 
-                    <td><tr>
-                    <label for="login"></label>
-                    <input type="text" required name="login" id="login" placeholder="Login"/>
-                    </tr></td>
-                    <br><br>
+                    <div class="campo">
+                        <label for="senha"></label>
+                        <input type="password" required name="senha" style="width: 20em; height: 2em; font-size: 15px" id="senha" placeholder="Senha"/>
+                    </div><br>
 
-                    <td><tr>
-                    <label for="senha"></label>
-                    <input type="password" required name="senha" id="senha" placeholder="Senha"/>
-                    </tr></td>
-                    <br><br>
-
-                    <td><tr>
-                    <label for="senha-confirma"></label>
-                    <input type="password" required name="senha-confirma" id="senha-confirma" placeholder="Confirmar Senha"/>
-                    </tr></td>
-                    <br><br>
-                    <button type="submit" required name="salvar" id="salvar"> Salvar </button>
+                    <div class="campo">
+                        <label for="senha-confirma"></label>
+                        <input type="password" required name="senha-confirma" style="width: 20em; height: 2em; font-size: 15px" id="senha-confirma" placeholder="Confirmar Senha"/>
+                    </div><br>
+                    <button type="submit" class="botao" required name="salvar" id="salvar"> Salvar </button>
                 </table>
             </form>
         </div>
